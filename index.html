@@ -1,0 +1,59 @@
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inscripciones</title>
+    <link rel="stylesheet" href="bulma\css\bulma.css">
+</head>
+<body>
+    <div class="container is-widescreen">
+        <div class="columns">
+            <div class="column">
+                <section class="section">                
+                    <h1 class="title">Pre Inscripcion</h1>
+                    <p class="subtitle">con FireBase</p>
+                    <form id="form-firebase">
+                        <div class="field">
+                            <label class="label" for="nombre">Nombre Completo</label>
+                            <div class="control">
+                                <input class="input" type="text" id="nombre" autocomplete="off" autofocus>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="ci">Numero de Carnet</label>
+                            <div class="control">
+                            <input class="input" type="text" id="ci" autocomplete="off" autofocus >
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="carrera">Carrera</label>
+                            <p class="control has-icons-left">
+                            <span class="select">
+                                <select id="carrera">
+                                    <option value="Diseño" selected>Diseño</option>
+                                    <option value="Sistemas">Sistemas</option>
+                                    <option value="Contabilidad">Contabilidad</option>
+                                </select>
+                            </span>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-globe"></i>
+                            </span>
+                            </p>
+                        </div>
+                        <button class="button is-primary" id="btn-form-firebase">Guardar</button>
+                    </form>
+                    
+                </section>
+            </div>
+            <div class="column">
+                <section class="section">
+                    <h2 class="subtitle">Inscritos</h2>
+                    <div class="col-md-6" id="inscritos"></div>
+                </section>
+            </div>
+            
+        </div>
+    </div>  
+    <script src="js\scripts.js" type="module"></script>  
+</body>
+</html>
